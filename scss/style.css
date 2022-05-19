@@ -1,0 +1,258 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+  width: 100%;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+.flex .logo {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 1.8rem;
+  color: rgb(173, 169, 169);
+  font-weight: bold;
+}
+.flex .hamburger {
+  width: 24px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.flex .hamburger span {
+  background-color: rgb(82, 80, 80);
+  display: block;
+  height: 3px;
+  width: 100%;
+  margin-bottom: 7px;
+}
+.flex .hamburger span:nth-of-type(3) {
+  margin-bottom: 0;
+}
+
+.bigger-container {
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+}
+.bigger-container img {
+  width: 65%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bigger-container .box {
+  margin: 9rem 2rem 0 2rem;
+  background-color: #b09673;
+  color: white;
+  height: 40%;
+  padding: 3rem 2rem;
+}
+.bigger-container .box .subtitle {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.bigger-container .box .title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+.bigger-container .box p {
+  font-size: 1.4rem;
+}
+.bigger-container .box a {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 0.3rem;
+}
+.bigger-container .box a:hover {
+  border-bottom: none;
+}
+
+.light-blue-bg {
+  background-color: rgb(186, 186, 218);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.8rem;
+  margin-bottom: 3rem;
+}
+.grid .boxx {
+  padding: 2.5rem 1.5rem;
+}
+.grid .boxx p {
+  margin: 1.2rem 0;
+}
+.grid .boxx a {
+  color: rgb(82, 80, 80);
+  border-bottom: 1px solid rgb(82, 80, 80);
+  padding-bottom: 0.3rem;
+}
+.grid .boxx a:hover {
+  border-bottom: none;
+}
+.grid .box1 {
+  grid-row: 1/3;
+}
+.grid .box1 h2 {
+  font-size: 2.5rem;
+}
+.grid .box1 .way {
+  color: #b09673;
+  font-size: 4rem;
+}
+.grid .box2 {
+  grid-row: 1/3;
+  padding: 0;
+}
+.grid .box2 img {
+  height: 75%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section {
+  width: 100%;
+  position: relative;
+}
+.section .container {
+  position: relative;
+}
+.section .container .important-text {
+  width: 45%;
+  font-size: 1.6rem;
+  padding: 1.5rem;
+  margin-left: 2rem;
+  color: rgb(82, 80, 80);
+}
+.section .left-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 65%;
+  background-color: rgb(0, 16, 29);
+  z-index: -1;
+}
+.section .right-box {
+  position: absolute;
+  bottom: -80px;
+  right: 0;
+  width: 50%;
+  height: 85%;
+  background-color: rgb(0, 16, 29);
+  z-index: -1;
+}
+.section img {
+  margin-top: 5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section .box {
+  position: absolute;
+  top: 40%;
+  right: 4%;
+  width: 47%;
+  margin: 9rem 2rem 0 2rem;
+  background-color: #b09673;
+  color: white;
+  height: 40%;
+  padding: 3rem 2rem;
+}
+.section .box h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.section .box .text {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.section .box p {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.section .box p a {
+  border-bottom: 1px solid white;
+  padding-bottom: 0.3rem;
+}
+.section .box p a:hover {
+  border-bottom: none;
+  opacity: 0.8;
+}
+.section .box .btn {
+  display: block;
+  text-align: center;
+  width: 45%;
+  border: 1px solid white;
+  padding: 0.8rem 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  margin: 0 auto;
+}
+.section .box .btn:hover {
+  background-color: white;
+  color: #b09673;
+}
+
+footer {
+  margin-top: 5rem;
+  width: 100%;
+  background-color: rgb(82, 80, 80);
+  color: white;
+}
+footer .container {
+  padding: 4.5rem 0 2rem 0;
+}
+footer .container .text {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+footer .container p {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
